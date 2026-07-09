@@ -1,0 +1,59 @@
+*{ /**Esto es un reset universal en la pagina de los margenes y el ancho de la pagina **/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #121212;
+    font-family: "Quicksand", sans-serif;
+   
+}
+header, main{
+    color: #EEEEEE; 
+}  
+header nav ul{
+display: flex;
+justify-content: space-around;
+align-items: center;
+list-style: none;
+}                
+header nav ul li a{
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 10px 15px;
+} 
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 70vh;
+}
+.hero h1{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #00ADB5;
+}
+.hero h2{
+    font-size: 1.8rem;
+    color: #EEEEEE;
+    margin-bottom: 20px;
+}
+
+.btn-contacto{
+    display: inline-block;
+    background-color: #00ADB5;
+    color: #121212;
+    padding: 12px 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+.btn-contacto:hover{
+    background-color: #EEEEEE;
+    cursor: pointer;
+}
