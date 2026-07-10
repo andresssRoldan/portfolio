@@ -92,3 +92,68 @@ header nav ul li a{
 .skill-card p{
     color: #ccc;
 }
+
+
+/**************************** SECCION PROYECTOS ****************/
+.proyectos{
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.proyectos h2{
+    color: #00f2fe;
+    margin-bottom: 30px;
+}
+.grid-proyectos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.proyecto-card{
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* transicion**/ 
+
+}
+
+/******* EFECTO HOVER PARTE 2: Qué pasa cuando pasas el mouse ******/
+.proyecto-card:hover{
+    transform: translate(-8px);/*eleva la tarjeta sutilmente hacia arriba*/
+    border: 2px solid;
+    border-color: #00f2fe;
+    box-shadow: 0 10px 20px rgba(0, 242,254, 0.15 );
+}
+.proyecto-info h3{
+    color: #333;
+    margin-bottom: 12px;
+}
+.proyecto-info p{
+    color: #ccc;
+}
+.tag{
+    background-color: #2a2a2a;
+    padding: 5px 10px;
+    border-radius:6px;
+    font-size: 0.8 rem;
+    margin-right: 8px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.btn-proyecto{
+    display: block;
+    text-align: center;
+    background: transparent;
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9 rem;
+    transition: background 0.3s, color 0.3s;
+}
+.btn-proyecto:hover {
+    background: #333;
+    color: #fff;
+}
