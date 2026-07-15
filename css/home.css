@@ -205,11 +205,11 @@ header nav ul li a{
 }
 .grupo-input input, 
 .grupo-input textarea {
-    background-color: #121212; /* Inputs negros */
+    background-color: #121212 !important; /* Inputs negros */
     border: 1px solid #444;
     border-radius: 6px;
     padding: 12px;
-    
+    color: #fff !important;
     font-family: inherit;
     font-size: 0.95rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
