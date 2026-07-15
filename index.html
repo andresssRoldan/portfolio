@@ -5,29 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    
-
+<body>  
     <header>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>Contacts</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#proyecto">Projects</a></li>
+                <li><a href="#contacto">Contacts</a></li>
             </ul>
         </nav>   
-    </header>
-   
+    </header>   
     <main>
-        <h1> Hola, soy Daniel Cely y soy estudiante de 5to semestre de Ingenieria en Software.</h1>
-        <h2>Desarrollador full stack, Node.js , express, jvas script, sql</h2>
 
-        <p>  En esta pagina web conoceras un pococ mas de mis habilidad y proyectos realizados durante mi tiempo de educacion profesional, las diferentes tecnologias que  se manejar.</p>
+        <section class="hero">
+            <h1>Daniel Cely</h1>
+            <h2>Software Engineering Student & Full-Stack Developer</h2>
+            <p>Bienvenido a mi portafolio profesional. Aquí puedes ver mis proyectos y habilidades.</p>
+            <a href="#contacto" class="btn-contacto">Contáctame</a>
+        </section>
 
+            <!---- ========= SECCION SOBRE MY Y MIS HABILIDADES===========-->
+        <section class="sobre-mi">
+            <div class="contenedor-bio">
+                <h2>Sobre Mi</h2>
+                <p>Hola, soy Daniel Cely, estudiante de quinto semestre de Ingenieria de Software en la Institución     Universitaria Pascual Bravo. Me apasiona el desarrollo Full Stack y la creación de soluciones web robustas y eficientes.
+                </p>
+            </div>            
+            <!---   Tarjeta de mis Habilidades-->
+            <div class="contenedor-skills">
+                <h2>Mis habilidades</h2>
+                <div class="grid-skills">
+                    <div class="skill-card">
+                        <h3>Frontend</h3>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                    <div  class="skill-card">
+                        <h3>Backend</h3>
+                        <p>Node.js, Express</p>
+                    </div>
+                    <div  class="skill-card">
+                        <h3>Bases de Datos</h3>
+                        <p>SQL, MONGO DB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-----===========SECCION SOBRE MIS PROYECTOS ===============-->
+        <section id="proyecto" class="proyectos">
+            <h2>Mis Proyectos</h2>
+            <!----   Tarjeta Proyecto #1  -->
+            <div class="grid-proyectos">
+                <div class="proyecto-card">
+                    <div class="proyecto-info">
+                        <h3>Portafolio Profesional</h3>
+                        <p>Diseño y despliegue de mi sitio web personal utilizando HTMl, CSS, GitHub Pages para presentar mi proyectos de ingenieria</p>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Git</span>
+                        <a href="#" class="btn-proyecto">Ver Código</a>
+                    </div>                   
+                </div>
 
+              <!---   Tarjeta Proyecto #2  -->
+                <div class="proyecto-card">
+                    <div class="proyecto-info">
+                        <h3>API REST con Node.js</h3>
+                        <p>Desarrollo de una API robusta oara la gestiona de datos utilizando, Express, JavaScript y bases de datos estructuradas con SQL.</p>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">SQL</span>
+                        <a href="#" class="btn-proyecto">Ver código</a>
+                    </div>
+                </div>
+            </div>           
+        </section>
+        <!---============= SECCION DE CONTACTO =============-->
+        <section id="contacto" class="contacto">
+            <h2> Contáctame</h2>
+            <p class="contacto-subtitulo">¿Tienes un proyecto en mente o quieres que  trabajemos juntos ? ¡Escribeme! </p>
+            <div class="contenedor-contacto">
+                <!-- FORMULARIO DE CONTACTO-->
+                 <form class="formulario-contacto">
+                    <div class="grupo-input">
+                        <label for="nomre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="grupo-input">
+                        <label for="email">Correo Elecdtrónico</label>
+                        <input type="email" name="email" placeholder="Tu Correo">
+                    </div>
+                    <div class="grupo-input">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" row="5" placeholder="¿En qué te puedo ayudar?" required>     </textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                 </form>
+            </div>
+        </section>
     </main>
-   
+    
+    <!-- ============ FOOTER (PIE DE PÁGINA=============== -->
+    <footer>
+        <div class="contenedor-footer">
+            <p>&copy; 2026 Daniel Cely Roldan. Todos los derechos reservados.</p>
+            <div class="redes-sociales">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-red">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="link-red">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>

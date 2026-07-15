@@ -1,3 +1,322 @@
-h1{
-    font-weight: bolder;
+
+/******************** DOCUMENTO HTML *******************************/
+
+*{ /**Esto es un reset universal en la pagina de los margenes y el ancho de la pagina **/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth; /* Esto hace que el deslizamiento sea suave */
+}
+body{
+    background-color: #121212;
+    font-family: "Quicksand", sans-serif;
+   
+}
+
+/********************** SECCION DEL HEADER ************************/
+header, main{
+    color: #EEEEEE; 
+}  
+header nav ul{
+display: flex;
+justify-content: space-around;
+align-items: center;
+list-style: none;
+}                
+header nav ul li a{
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 10px 15px;
+} 
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 70vh;
+}
+.hero h1{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #00ADB5;
+}
+.hero h2{
+    font-size: 1.8rem;
+    color: #EEEEEE;
+    margin-bottom: 20px;
+}
+
+.btn-contacto{
+    display: inline-block;
+    background-color: #00ADB5;
+    color: #121212;
+    padding: 12px 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+.btn-contacto:hover{
+    background-color: #EEEEEE;
+    cursor: pointer;
+}
+
+/****************************** SECCION SOBRE MI******************************************************************/
+
+.sobre-mi{
+  padding: 60px 20px;  
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contenedor-bio{
+    margin-bottom: 40px;
+}
+.contenedor-bio h2, .contenedor-skills h2{
+    color: #00f2fe; /**Colore turquesa mas intenso**/ 
+    margin-bottom: 15px;
+}
+.grid-skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);/**3 columnas iguales*/
+    gap: 20px;/**espacio entre las tarjetas*/
+}
+.skill-card{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.skill-card h3{
+    color: black;
+    margin-bottom: 20px;
+}
+.skill-card p{
+    color: black;
+}
+
+
+/**************************** SECCION PROYECTOS ****************/
+.proyectos{
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.proyectos h2{
+    color: #00f2fe;
+    margin-bottom: 30px;
+}
+.grid-proyectos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.proyecto-card{
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* transicion**/ 
+
+}
+/******* EFECTO HOVER PARTE  Qué pasa cuando pasas el mouse POR ENCIMA DEL BOTON ******/
+.proyecto-card:hover{
+    transform: translateY(-8px);/*eleva la tarjeta sutilmente hacia arriba*/
+    border: 2px solid;
+    border-color: #00f2fe;
+    box-shadow: 0 10px 20px rgba(0, 242,254, 0.15 );
+}
+.proyecto-info h3{
+    color: #333;
+    margin-bottom: 12px;
+}
+.proyecto-info p{
+    color: black;
+}
+.tag{
+    background-color: #2a2a2a;
+    padding: 5px 10px;
+    border-radius:6px;
+    font-size: 0.8rem;
+    margin-right: 8px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.btn-proyecto{
+    display: block;
+    text-align: center;
+    background: transparent;
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s, color 0.3s;
+}
+.btn-proyecto:hover {
+   
+    background: #333;
+    color: #fff;
+}
+
+/************************ SECCION DE CONTÁCTAME ******************/
+.contacto{
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contacto h2{
+    color: #00f2fe;
+    margin-bottom: 10px;
+}
+.contacto-subtitulo{
+    color: #EEEEEE;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+.contenedor-contacto{
+    background-color: #EEEEEE;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    text-align: left;
+}
+.grupo-input {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.grupo-input label {
+    color: #EEEEEE;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.grupo-input input, 
+.grupo-input textarea {
+    background-color: #121212; /* Inputs negros */
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 12px;
+    color: #EEEEEE;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+/* Efecto cuando el usuario da clic para escribir en el input */
+.grupo-input input:focus, 
+.grupo-input textarea:focus {
+    outline: none;
+    border-color: #00f2fe;
+    box-shadow: 0 0 8px rgba(0, 242, 254, 0.2);
+}
+.btn-enviar {
+    display: block;
+    width: 100%; /* Ocupa todo el ancho del formulario */
+    background-color: #00ADB5;
+    color: #121212;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn-enviar:hover {
+    background-color: black;
+    color: #EEEEEE;
+}
+ /***************** SECCION DEL FOOTER ***********************/
+ footer{
+    background-color: #1a1a1a;
+    padding: 30px 20px;
+    border-top: 1px solid #333;
+ }
+.contenedor-footer{
+    max-width: 1000px;
+    margin: o auto;
+    display:  flex;
+    justify-content: space-between;
+    font-weight: bold;
+    transition: color 0.3 ease, transform 0.3s ease;
+}
+
+.link-red, .link-red:visited {
+    color: #00f2fe !important; /* Usamos !important temporalmente para forzar tu turquesa si el navegador lo bloquea */
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.link-red:hover {
+    color: #EEEEEE !important; /* Cambia a blanco al pasar el mouse */
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
+
+/* --- DISEÑO RESPONSIVO (PANTALLAS MEDIANAS Y PEQUEÑAS) --- */
+
+/* Cuando la pantalla sea menor a 768px (Celulares y Tablets en vertical) */
+@media (max-width: 768px) {
+    /* Cambiamos el Grid de la seccion Habilidades a 1 sola columna */
+    .grid-skills{
+        display: grid;
+        grid-template-columns: 1fr; /* Pasa de 3 columnas a 1 sola columna vertical */
+        gap: 15px; /* Deja un espacio ordenado entre cada tarjeta */
+        padding: 0 10px; /* Evita que toquen los bordes de la pantalla */
+    }
+    
+    /* Cambiamos el Grid de proyectos a 1 sola columna */
+    .grid-proyectos {
+        grid-template-columns: 1fr; /* Ahora se apilan uno debajo del otro */
+        gap: 20px;
+    }
+
+    /* Ajustamos el tamaño de los títulos para que no se vean gigantes en celular */
+    .proyectos h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Si tu sección "Sobre Mí" o el Header usaban flex/grid de varias columnas, */
+    /* esto asegura que todo se alinee verticalmente en el celular */
+    .sobre-mi-container, .header-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    /* Ajuste de padding para el formulario en celulares */
+    .contenedor-contacto {
+        padding: 20px;
+    }
+    /*  ajusete del footer para dispositivo mobiles*/
+    .contenedor-footer{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
 }
