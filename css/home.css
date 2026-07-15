@@ -185,7 +185,7 @@ header nav ul li a{
     font-size: 1rem;
 }
 .contenedor-contacto{
-    background-color: #EEEEEE;
+    background-color:#1e1e1e;
     padding: 30px;
     border-radius: 12px;
     border: 1px solid #333;
@@ -196,8 +196,9 @@ header nav ul li a{
     display: flex;
     flex-direction: column;
 }
+
 .grupo-input label {
-    color: #EEEEEE;
+    color: #fff;
     margin-bottom: 8px;
     font-size: 0.9rem;
     font-weight: bold;
@@ -208,11 +209,12 @@ header nav ul li a{
     border: 1px solid #444;
     border-radius: 6px;
     padding: 12px;
-    color: #EEEEEE;
+    
     font-family: inherit;
     font-size: 0.95rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 /* Efecto cuando el usuario da clic para escribir en el input */
 .grupo-input input:focus, 
 .grupo-input textarea:focus {
@@ -311,6 +313,7 @@ header nav ul li a{
     /* Ajuste de padding para el formulario en celulares */
     .contenedor-contacto {
         padding: 20px;
+
     }
     /*  ajusete del footer para dispositivo mobiles*/
     .contenedor-footer{
