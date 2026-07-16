@@ -18,6 +18,21 @@ body{
 }
 
 /********************** SECCION DEL HEADER ************************/
+header {
+    position: fixed;        /* 1. Lo fijamos arriba */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;          /* 2. Lo ponemos por encima de todo */
+    padding-bottom: 15px;
+    /* 3. Efecto de vidrio moderno */
+    background-color: rgba(18, 18, 18, 0.8); /* Fondo oscuro pero transparente */
+    backdrop-filter: blur(10px);             /* Desenfoque de lo que pasa por detrás */
+    -webkit-backdrop-filter: blur(10px);     /* Compatibilidad para Safari */
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Línea sutil abajo */
+    transition: all 0.3s ease;
+}
 header, main{
     color: #EEEEEE; 
 }  

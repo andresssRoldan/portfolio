@@ -89,23 +89,25 @@
             <p class="contacto-subtitulo">¿Tienes un proyecto en mente o quieres que  trabajemos juntos ? ¡Escribeme! </p>
             <div class="contenedor-contacto">
                 <!-- FORMULARIO DE CONTACTO-->
-                 <form class="formulario-contacto">
-                    <div class="grupo-input">
-                        <label for="nomre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
-                    </div>
-                    <div class="grupo-input">
-                        <label for="email">Correo Elecdtrónico</label>
-                        <input type="email" name="email" placeholder="Tu Correo">
-                    </div>
-                    <div class="grupo-input">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" id="mensaje" row="5" 
-                        placeholder="¿En qué te puedo ayudar?" required>     
-                        </textarea>
-                    </div>
-                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
-                 </form>
+                 <form class="formulario-contacto" action="https://formspree.io/f/TU_CODIGO_AQUÍ" method="POST">
+    
+    <div class="grupo-input">
+        <label for="nombre">Nombre</label> <!-- Corregí 'nomre' por 'nombre' en el 'for' -->
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    </div>
+    
+    <div class="grupo-input">
+        <label for="email">Correo Electrónico</label> <!-- Corregí 'Elecdtrónico' por 'Electrónico' -->
+        <input type="email" id="email" name="email" placeholder="Tu Correo" required> <!-- Le agregué el id="email" y el required -->
+    </div>
+    
+    <div class="grupo-input">
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" rows="5" placeholder="¿En qué te puedo ayudar?" required></textarea> <!-- Corregí 'row' por 'rows' -->
+    </div>
+    
+    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+</form>
             </div>
         </section>
     </main>
