@@ -262,7 +262,7 @@ header nav ul li a{
  }
 .contenedor-footer{
     max-width: 1000px;
-    margin: o auto;
+    margin: 0 auto;
     display:  flex;
     justify-content: space-between;
     font-weight: bold;
