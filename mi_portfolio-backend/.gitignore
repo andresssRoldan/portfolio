@@ -1,0 +1,3 @@
+// aca estan los archivos que no quiero subir a git y que son privados
+.env
+node_modules
