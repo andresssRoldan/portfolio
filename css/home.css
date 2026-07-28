@@ -238,7 +238,9 @@ header nav ul li a{
     box-shadow: 0 0 8px rgba(0, 242, 254, 0.2);
 }
 .btn-enviar {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%; /* Ocupa todo el ancho del formulario */
     background-color: #00ADB5;
     color: #121212;
@@ -249,11 +251,18 @@ header nav ul li a{
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s ease;
+    gap: 10px;
 }
 .btn-enviar:hover {
     background-color: black;
     color: #EEEEEE;
 }
+
+.btn-texto {
+    display: inline;
+}
+
+/* Spinner eliminado para quitar la última animación */
  /***************** SECCION DEL FOOTER ***********************/
  footer{
     background-color: #1a1a1a;
@@ -284,10 +293,9 @@ header nav ul li a{
     transform: translateY(-2px);
 }
 
+/* Animaciones de entrada eliminadas. */
 
-
-
-
+/* Los elementos no usan animaciones de aparición al entrar en pantalla. */
 
 
 
